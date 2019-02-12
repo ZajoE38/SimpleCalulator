@@ -1,0 +1,20 @@
+D:\CS\Projects\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+D:\CS\Projects\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+D:\CS\Projects\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\CS\Projects\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+D:\CS\Projects\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\CS\Projects\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\CS\Projects\Calculator\Calculator\bin\Debug\Calculator.exe
+D:\CS\Projects\Calculator\Calculator\bin\Debug\Calculator.pdb
+D:\CS\Projects\Calculator\Calculator\obj\Debug\Calculator.exe
+D:\CS\Projects\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Computer Science\Projects\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Computer Science\Projects\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Computer Science\Projects\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.pdb
