@@ -97,6 +97,9 @@ namespace Calculator
             isPendingOp = true;
         }
 
+        
+
+        #region Number Buttons
         private void Btn0_Click(object sender, EventArgs e)
         {
             if (isAfterResult)
@@ -110,7 +113,7 @@ namespace Calculator
                 {
                     opA += 0;
                     PrintNumber();
-                }                    
+                }
             }
             else
             {
@@ -118,9 +121,8 @@ namespace Calculator
                 {
                     opB += 0;
                     PrintNumber();
-                }                    
+                }
             }
-            
         }
 
         private void Btn1_Click(object sender, EventArgs e)
@@ -284,6 +286,7 @@ namespace Calculator
             }
             PrintNumber();
         }
+        #endregion
 
         private void PrintNumber()
         {
@@ -356,6 +359,6 @@ namespace Calculator
             {
                 isZero = false;
             }
-        }        
+        }
     }
 }
