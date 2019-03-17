@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    public partial class Form1 : Form
+    public partial class frmCalculator : Form
     {
         public enum MathOp : byte { Add, Sub, Mult, Div };
         MathOp Operation;
@@ -22,13 +22,63 @@ namespace Calculator
         bool isPendingOp; //operation        
         
 
-        public Form1()
+        public frmCalculator()
         {
             InitializeComponent();
             ResetBools();
+        }        
+
+        
+        private void Btn0_Click(object sender, EventArgs e)
+        {
+            if (isAfterResult)
+            {
+                ResetBools();
+                ResetOperands();
+            }
+            if (isZero)
+            {
+                if (opA != "" && opA != "0")
+                {
+                    opA += 0;
+                    PrintNumber();
+                }
+            }
+            else
+            {
+                if (opB != "" && opB != "0")
+                {
+                    opB += 0;
+                    PrintNumber();
+                }
+            }
+        }
+
+        private void Btn_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            int value = Convert.ToInt32(btn.Text);
+
+            if (isAfterResult)
+            {
+                ResetBools();
+                ResetOperands();
+            }
+            if (isZero)
+            {
+                opA += value;
+            }
+            else
+            {
+                opB += value;
+            }
+            PrintNumber();
         }
         
+        
+        
 
+        #region Operation Buttons
         private void BtnC_Click(object sender, EventArgs e)
         {
             ResetBools();
@@ -50,12 +100,12 @@ namespace Calculator
             if (isZero)
             {
                 int n = opA.Length;
-                opA = opA.Substring(0, n-1);
+                opA = opA.Substring(0, n - 1);
             }
             else
             {
                 int n = opB.Length;
-                opB = opB.Substring(0, n-1);
+                opB = opB.Substring(0, n - 1);
             }
             PrintNumber();
         }
@@ -67,7 +117,7 @@ namespace Calculator
                 DoCalculation();
                 isAfterResult = true;
             }
-        }       
+        }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
@@ -96,198 +146,9 @@ namespace Calculator
             MathOpLogic();
             isPendingOp = true;
         }
-
-        
-
-        #region Number Buttons
-        private void Btn0_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                if (opA != "" && opA != "0")
-                {
-                    opA += 0;
-                    PrintNumber();
-                }
-            }
-            else
-            {
-                if (opB != "" && opB != "0")
-                {
-                    opB += 0;
-                    PrintNumber();
-                }
-            }
-        }
-
-        private void Btn1_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                opA += 1;
-            }
-            else
-            {
-                opB += 1;
-            }
-            PrintNumber();
-        }
-
-        private void Btn2_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                opA += 2;
-            }
-            else
-            {
-                opB += 2;
-            }
-            PrintNumber();
-        }
-
-        private void Btn3_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                opA += 3;
-            }
-            else
-            {
-                opB += 3;
-            }
-            PrintNumber();
-        }
-
-        private void Btn4_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                opA += 4;
-            }
-            else
-            {
-                opB += 4;
-            }
-            PrintNumber();
-        }
-
-        private void Btn5_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                opA += 5;
-            }
-            else
-            {
-                opB += 5;
-            }
-            PrintNumber();
-        }
-
-        private void Btn6_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                opA += 6;
-            }
-            else
-            {
-                opB += 6;
-            }
-            PrintNumber();
-        }
-
-        private void Btn7_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                opA += 7;
-            }
-            else
-            {
-                opB += 7;
-            }
-            PrintNumber();
-        }
-
-        private void Btn8_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                opA += 8;
-            }
-            else
-            {
-                opB += 8;
-            }
-            PrintNumber();
-        }
-
-        private void Btn9_Click(object sender, EventArgs e)
-        {
-            if (isAfterResult)
-            {
-                ResetBools();
-                ResetOperands();
-            }
-            if (isZero)
-            {
-                opA += 9;
-            }
-            else
-            {
-                opB += 9;
-            }
-            PrintNumber();
-        }
         #endregion
 
+        #region Auxiliary Methods
         private void PrintNumber()
         {
             LblDisplay.Text = isZero ? opA.ToString() : opB.ToString();
@@ -360,5 +221,7 @@ namespace Calculator
                 isZero = false;
             }
         }
+        #endregion
+
     }
 }

@@ -18,3 +18,13 @@ C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.csproj.G
 C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Computer Science\Projects\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Computer Science\Projects\SimpleCalulator\Calculator\bin\Debug\Calculator.exe.config
+C:\Computer Science\Projects\SimpleCalulator\Calculator\bin\Debug\Calculator.exe
+C:\Computer Science\Projects\SimpleCalulator\Calculator\bin\Debug\Calculator.pdb
+C:\Computer Science\Projects\SimpleCalulator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Computer Science\Projects\SimpleCalulator\Calculator\obj\Debug\Calculator.frmCalculator.resources
+C:\Computer Science\Projects\SimpleCalulator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Computer Science\Projects\SimpleCalulator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Computer Science\Projects\SimpleCalulator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Computer Science\Projects\SimpleCalulator\Calculator\obj\Debug\Calculator.exe
+C:\Computer Science\Projects\SimpleCalulator\Calculator\obj\Debug\Calculator.pdb

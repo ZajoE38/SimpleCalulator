@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    partial class Form1
+    partial class frmCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -140,7 +140,7 @@
             this.Btn7.TabIndex = 1;
             this.Btn7.Text = "7";
             this.Btn7.UseVisualStyleBackColor = false;
-            this.Btn7.Click += new System.EventHandler(this.Btn7_Click);
+            this.Btn7.Click += new System.EventHandler(this.Btn_Click);
             // 
             // BtnMult
             // 
@@ -166,7 +166,7 @@
             this.Btn8.TabIndex = 1;
             this.Btn8.Text = "8";
             this.Btn8.UseVisualStyleBackColor = false;
-            this.Btn8.Click += new System.EventHandler(this.Btn8_Click);
+            this.Btn8.Click += new System.EventHandler(this.Btn_Click);
             // 
             // Btn9
             // 
@@ -179,7 +179,7 @@
             this.Btn9.TabIndex = 1;
             this.Btn9.Text = "9";
             this.Btn9.UseVisualStyleBackColor = false;
-            this.Btn9.Click += new System.EventHandler(this.Btn9_Click);
+            this.Btn9.Click += new System.EventHandler(this.Btn_Click);
             // 
             // Btn4
             // 
@@ -192,7 +192,7 @@
             this.Btn4.TabIndex = 1;
             this.Btn4.Text = "4";
             this.Btn4.UseVisualStyleBackColor = false;
-            this.Btn4.Click += new System.EventHandler(this.Btn4_Click);
+            this.Btn4.Click += new System.EventHandler(this.Btn_Click);
             // 
             // BtnSub
             // 
@@ -218,7 +218,7 @@
             this.Btn5.TabIndex = 1;
             this.Btn5.Text = "5";
             this.Btn5.UseVisualStyleBackColor = false;
-            this.Btn5.Click += new System.EventHandler(this.Btn5_Click);
+            this.Btn5.Click += new System.EventHandler(this.Btn_Click);
             // 
             // Btn6
             // 
@@ -231,7 +231,7 @@
             this.Btn6.TabIndex = 1;
             this.Btn6.Text = "6";
             this.Btn6.UseVisualStyleBackColor = false;
-            this.Btn6.Click += new System.EventHandler(this.Btn6_Click);
+            this.Btn6.Click += new System.EventHandler(this.Btn_Click);
             // 
             // Btn1
             // 
@@ -244,7 +244,7 @@
             this.Btn1.TabIndex = 1;
             this.Btn1.Text = "1";
             this.Btn1.UseVisualStyleBackColor = false;
-            this.Btn1.Click += new System.EventHandler(this.Btn1_Click);
+            this.Btn1.Click += new System.EventHandler(this.Btn_Click);
             // 
             // BtnAdd
             // 
@@ -270,7 +270,7 @@
             this.Btn2.TabIndex = 1;
             this.Btn2.Text = "2";
             this.Btn2.UseVisualStyleBackColor = false;
-            this.Btn2.Click += new System.EventHandler(this.Btn2_Click);
+            this.Btn2.Click += new System.EventHandler(this.Btn_Click);
             // 
             // Btn3
             // 
@@ -283,7 +283,7 @@
             this.Btn3.TabIndex = 1;
             this.Btn3.Text = "3";
             this.Btn3.UseVisualStyleBackColor = false;
-            this.Btn3.Click += new System.EventHandler(this.Btn3_Click);
+            this.Btn3.Click += new System.EventHandler(this.Btn_Click);
             // 
             // BtnNeg
             // 
@@ -390,7 +390,7 @@
             this.BtnMS.Text = "MS";
             this.BtnMS.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -427,7 +427,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "frmCalculator";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
